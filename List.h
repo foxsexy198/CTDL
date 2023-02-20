@@ -1,3 +1,4 @@
+
 #define MaxLength 100
 
 typedef int ElementType;
@@ -57,7 +58,7 @@ void deleteList(ElementType x, Position P, List *pL){
 	int i;
 	for(i = P; i != endList(*pL); i++)
 		pL->Elements[i-1] = pL->Elements[i];
-	pL->Last++;
+	pL->Last--;
 }
 //tim vi tri x xuat hien dau tien trong ds
 Position locate(ElementType x, List L){
